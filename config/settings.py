@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'rooms.apps.RoomsConfig',
+    'common.apps.CommonConfig',
+    'experience.apps.ExperienceConfig',
+    'category.apps.CategoryConfig',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #AUTH
 
 AUTH_USER_MODEL = "users.User"
+
+TIME_ZONE = 'Asia/Seoul'
